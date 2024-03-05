@@ -43,36 +43,88 @@ namespace InicioDoUsoDeIF
             Console.ReadKey(); */
 
             //Calculo de hospedagem
-           /* Console.Write("Digite o valor da diario do hotel: R$");
-            double valor = double.Parse(Console.ReadLine());
+            /* Console.Write("Digite o valor da diario do hotel: R$");
+             double valor = double.Parse(Console.ReadLine());
 
-            Console.Write("Digite quantos adultos são: ");
-            int adu = int.Parse(Console.ReadLine());
+             Console.Write("Digite quantos adultos são: ");
+             int adu = int.Parse(Console.ReadLine());
 
-            Console.Write("Digite quantas crianças são: ");
-            int cri = int.Parse(Console.ReadLine());
+             Console.Write("Digite quantas crianças são: ");
+             int cri = int.Parse(Console.ReadLine());
 
-            double familia = adu * valor + cri * (valor / 2);
+             double familia = adu * valor + cri * (valor / 2);
 
-            Console.WriteLine("O valor por dia da família será de: " + familia.ToString("C"));
+             Console.WriteLine("O valor por dia da família será de: " + familia.ToString("C"));
 
-            Console.Write("Digite o número de dias de hospedagem: ");
-            int dias = int.Parse(Console.ReadLine());
+             Console.Write("Digite o número de dias de hospedagem: ");
+             int dias = int.Parse(Console.ReadLine());
 
-            double total = familia * dias;
+             double total = familia * dias;
 
-            Console.WriteLine("O valor total dera de " +
-                "" + total.ToString("C"));
+             Console.WriteLine("O valor total dera de " +
+                 "" + total.ToString("C"));
 
-            Console.Write("Dogite o número de parcelas: "); 
-            int par = int.Parse(Console.ReadLine());
+             Console.Write("Dogite o número de parcelas: "); 
+             int par = int.Parse(Console.ReadLine());
 
-            double final = total / par; 
+             double final = total / par; 
 
-            Console.WriteLine("O valor por parcela sera de R$" + final.ToString("C"));
-            
-            Console.ReadKey();*/
-        
+             Console.WriteLine("O valor por parcela sera de R$" + final.ToString("C"));
+
+             Console.ReadKey();*/
+            int count = 1;
+
+
+            while (count == 1)
+            {
+
+                Console.Write("Digite a operação que deseja (+,-,*,/): ");
+                string op = Console.ReadLine();
+
+                Console.Write("Digite o primeiro número: ");
+                int n1 = int.Parse(Console.ReadLine());
+
+                Console.Write("Digite o segundo número: ");
+                int n2 = int.Parse(Console.ReadLine());
+
+                if (op == "/")
+                {
+                    double result = n1 / n2;
+                    Console.WriteLine("Resultado: " + result);
+                    count = 0;
+                }
+                else if (op == "*")
+                {
+                    double result = n1 * n2;
+                    Console.WriteLine("Resultado: " + result);
+                    count = 0;
+                }
+                else if (op == "+")
+                {
+                    double result = n1 + n2;
+                    Console.WriteLine("Resultado: " + result);
+                    count = 0;
+                }
+                else if (op == "-")
+                {
+
+
+                    double result = n1 - n2;
+                    Console.WriteLine("Resultado: " + result);
+                    count = 0;
+
+                }
+                else
+                {
+                    Console.WriteLine("Operação inexistente");
+                    Console.ReadKey();
+                }
+            }
+            Console.ReadKey();
+
         }
+
+       
+        
     }
 }
