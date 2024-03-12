@@ -72,6 +72,10 @@ namespace InicioDoUsoDeIF
              Console.WriteLine("O valor por parcela sera de R$" + final.ToString("C"));
 
              Console.ReadKey();*/
+
+
+
+            /*if operação
             int count = 1;
 
 
@@ -120,8 +124,81 @@ namespace InicioDoUsoDeIF
                     Console.ReadKey();
                 }
             }
-            Console.ReadKey();
+            Console.ReadKey(); */
 
+            /*imc tabela
+            Console.Write("Digite a sua altura(m): ");
+            double m = double.Parse(Console.ReadLine());
+
+            Console.Write("Digite o deu peso: ");
+            int p = int.Parse(Console.ReadLine());
+
+            double imc = p / (m * m);
+
+           if (imc <= 16.9) 
+            { 
+                Console.WriteLine("Você está muito abaixo do peso, " + imc);
+              
+            }
+           else if (imc <= 18.4)
+            {
+                Console.WriteLine("Você está abaixo do peso, " + imc);
+
+            }
+           else if (imc <= 24.9)
+            {
+                Console.WriteLine("Você está no peso normal, " + imc);
+
+            }
+            else if (imc <= 29.9)
+            {
+                Console.WriteLine("Você está acima do peso, " + imc);
+
+            }
+            else if (imc <= 34.9)
+            {
+                Console.WriteLine("Você está com obesidade grau I, " + imc);
+
+            }
+           else if (imc <= 40)
+            {
+                Console.WriteLine("Você está com obesidade grau II, " + imc);
+
+            }
+           else if (imc >= 40)
+            {
+                Console.WriteLine("Você está com obesidade grau III, " + imc);
+                Console.WriteLine("███████████████████████████\r\n███████▀▀▀░░░░░░░▀▀▀███████\r\n████▀░░░░░░░░░░░░░░░░░▀████\r\n███│░░░░░░░░░░░░░░░░░░░│███\r\n██▌│░░░░░░░░░░░░░░░░░░░│▐██\r\n██░└┐░░░░░░░░░░░░░░░░░┌┘░██\r\n██░░└┐░░░░░░░░░░░░░░░┌┘░░██\r\n██░░┌┘▄▄▄▄▄░░░░░▄▄▄▄▄└┐░░██\r\n██▌░│██████▌░░░▐██████│░▐██\r\n███░│▐███▀▀░░▄░░▀▀███▌│░███\r\n██▀─┘░░░░░░░▐█▌░░░░░░░└─▀██\r\n██▄░░░▄▄▄▓░░▀█▀░░▓▄▄▄░░░▄██\r\n████▄─┘██▌░░░░░░░▐██└─▄████\r\n█████░░▐█─┬┬┬┬┬┬┬─█▌░░█████\r\n████▌░░░▀┬┼┼┼┼┼┼┼┬▀░░░▐████\r\n█████▄░░░└┴┴┴┴┴┴┴┘░░░▄█████\r\n███████▄░░░░░░░░░░░▄███████\r\n██████████▄▄▄▄▄▄▄██████████\r\n███████████████████████████");
+
+            }
+          
+         
+
+            Console.ReadKey();  
+            */
+
+
+            Console.Write("Digite a sua media da nota: ");
+            int nota =int.Parse( Console.ReadLine());
+
+            Console.Write("Digite a porcentagem de presença: ");
+            int pre = int.Parse(Console.ReadLine());
+
+            if (nota >= 7 && pre >= 75)
+            {
+                Console.WriteLine("Você foi aprovado");
+            }
+            else if (nota >=4 && pre >= 75 || nota >= 7 && pre < 75)
+            {
+                Console.WriteLine("Você ficou de recuperação");
+            }
+            else
+            {
+                Console.WriteLine("███████████████████████████\r\n███████▀▀▀░░░░░░░▀▀▀███████\r\n████▀░░░░░░░░░░░░░░░░░▀████\r\n███│░░░░░░░░░░░░░░░░░░░│███\r\n██▌│░░░░░░░░░░░░░░░░░░░│▐██\r\n██░└┐░░░░░░░░░░░░░░░░░┌┘░██\r\n██░░└┐░░░░░░░░░░░░░░░┌┘░░██\r\n██░░┌┘▄▄▄▄▄░░░░░▄▄▄▄▄└┐░░██\r\n██▌░│██████▌░░░▐██████│░▐██\r\n███░│▐███▀▀░░▄░░▀▀███▌│░███\r\n██▀─┘░░░░░░░▐█▌░░░░░░░└─▀██\r\n██▄░░░▄▄▄▓░░▀█▀░░▓▄▄▄░░░▄██\r\n████▄─┘██▌░░░░░░░▐██└─▄████\r\n█████░░▐█─┬┬┬┬┬┬┬─█▌░░█████\r\n████▌░░░▀┬┼┼┼┼┼┼┼┬▀░░░▐████\r\n█████▄░░░└┴┴┴┴┴┴┴┘░░░▄█████\r\n███████▄░░░░░░░░░░░▄███████\r\n██████████▄▄▄▄▄▄▄██████████\r\n███████████████████████████");
+                Console.WriteLine("Que Burro kkk repetiu");
+            }
+
+            Console.ReadKey();
         }
 
        
