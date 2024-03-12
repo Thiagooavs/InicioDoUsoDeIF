@@ -177,7 +177,7 @@ namespace InicioDoUsoDeIF
             Console.ReadKey();  
             */
 
-
+            /*desafio por nota
             Console.Write("Digite a sua media da nota: ");
             int nota =int.Parse( Console.ReadLine());
 
@@ -199,6 +199,45 @@ namespace InicioDoUsoDeIF
             }
 
             Console.ReadKey();
+            */
+
+
+
+            Console.Write("Digite a sua idade: "); 
+            int ida = int.Parse(Console.ReadLine());    
+
+            Console.Write("Digite Quanto anos você trabalhou: ");
+            int trab = int.Parse(Console.ReadLine());       
+
+            if (ida >= 65 || trab >= 30 || ida >= 60 && trab >= 25) 
+            {
+                Console.WriteLine("Você tará a sua aposentadoria");
+            
+            }
+            else
+            {
+                Console.WriteLine("Trabalhe um pouco mais e quem sabe");    
+            }
+
+            Console.ReadKey();
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         }
 
        
